@@ -408,4 +408,35 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
 //=== / stats ===
 
 //=== footer ===
+.section-footer {
+    padding: 38px 0;
+    border-top: 1px solid #e2e2e2;
+    background-color: #f7f7f7;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        &__copy {
+            font-size: 14px;
+            font-weight: 300;
+            color: #8b8b8b;
+            opacity: .5;
+        }
+        &__designed-by {
+            font-size: 14px;
+            font-weight: 300;
+            letter-spacing: 2.7px;
+            color: #8b8b8b;
+
+            a {
+                font-weight: 400;
+                color: $color-title;
+                letter-spacing: 2.7px;
+                text-decoration: none;
+            }
+        }
+    }
+}
 //=== / footer ===
