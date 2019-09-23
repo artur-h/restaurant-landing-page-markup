@@ -379,6 +379,32 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
 //=== / menu ===
 
 //=== stats ===
+.section-stats {
+    padding-top: 54px;
+    padding-bottom: 58px;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            &__number {
+                margin-bottom: 7px;
+                font-size: 36px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                color: $color-title;
+                text-align: center;
+            }
+            &__description {
+                font-size: 16px;
+                font-weight: 300;
+                letter-spacing: 0.5px;
+                text-align: center;
+            }
+        }
+    }
+}
 //=== / stats ===
 
 //=== footer ===

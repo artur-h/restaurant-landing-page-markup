@@ -284,3 +284,22 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; }
+
+.section-stats {
+  padding-top: 54px;
+  padding-bottom: 58px; }
+  .section-stats-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    .section-stats-wrapper-item__number {
+      margin-bottom: 7px;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #000000;
+      text-align: center; }
+    .section-stats-wrapper-item__description {
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      text-align: center; }
