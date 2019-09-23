@@ -178,7 +178,7 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
 
 //=== app ===
 .section-app {
-    padding-top: 103px;
+    padding-top: 106px;
     background-color: #f7f7f7;
 
     &-wrapper {
@@ -232,6 +232,58 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
 //=== / app ===
 
 //=== reviews ===
+.section-reviews {
+    padding-top: 80px;
+    padding-bottom: 128px;
+    background: url(../assets/img/review-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    &__img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 10px;
+    }
+    &__comment {
+        margin: 0px auto 16px;
+        width: 80%;
+        font-size: 30px;
+        font-weight: 100;
+        line-height: 1.5em;
+        letter-spacing: 0.15px;
+        text-align: center;
+        color: $color-white;
+
+        &::before {
+            content: '“';
+            position: relative;
+            right: -5px;
+        }
+        &::after {
+            content: '”';
+            position: relative;
+            left: -5px;
+        }
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 100;
+        font-style: italic;
+        text-align: center;
+        color: $color-white;
+
+        &::before {
+            content: '-';
+            position: relative;
+        }
+        &::after {
+            content: '-';
+            position: relative;
+        }
+    }
+}
 //=== / reviews ===
 
 //=== menu ===
