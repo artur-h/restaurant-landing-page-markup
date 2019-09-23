@@ -196,3 +196,91 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
     .section-reviews__name::after {
       content: '-';
       position: relative; }
+
+.section-menu {
+  padding-top: 98px; }
+  .section-menu-inner__title {
+    margin-bottom: 29px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #000000; }
+  .section-menu-inner__img {
+    position: relative;
+    bottom: 37px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+.out-menu__wrapper {
+  display: flex;
+  flex-wrap: wrap; }
+  .out-menu__wrapper-item {
+    width: 20%;
+    text-decoration: none; }
+    .out-menu__wrapper-item__subtitle {
+      font-family: "Times New Roman", Times, serif;
+      margin-bottom: 3px;
+      padding-top: 73px;
+      font-size: 15.37px;
+      letter-spacing: 1px;
+      text-align: center;
+      font-style: italic;
+      color: #ffffff;
+      opacity: 0.9; }
+    .out-menu__wrapper-item__title {
+      padding-bottom: 90px;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-align: center;
+      color: #ffffff; }
+  .out-menu__wrapper .italian-menu-bg {
+    background: url(../assets/img/menu-italian.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .out-menu__wrapper .indian-menu-bg {
+    background: url(../assets/img/menu-indian.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .out-menu__wrapper .french-menu-bg {
+    background: url(../assets/img/menu-french.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .out-menu__wrapper .steakhouse-menu-bg {
+    background: url(../assets/img/menu-steakhouse.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .out-menu__wrapper .seafood-menu-bg {
+    background: url(../assets/img/menu-seafood.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .out-menu__wrapper .sushi-menu-bg {
+    background: url(../assets/img/menu-sushi.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .out-menu__wrapper .mexican-menu-bg {
+    background: url(../assets/img/menu-mexican.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .out-menu__wrapper .chinese-menu-bg {
+    background: url(../assets/img/menu-chinese.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .out-menu__wrapper .pizza-menu-bg {
+    background: url(../assets/img/menu-pizza.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
+  .out-menu__wrapper .american-menu-bg {
+    background: url(../assets/img/menu-american.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }

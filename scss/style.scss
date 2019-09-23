@@ -6,6 +6,12 @@
 @mixin font-secondary {
     font-family: "Times New Roman", Times, serif;
 }
+
+@mixin bg-position {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
 //=== / Mixin ===
 
 //=== Variables ===
@@ -48,9 +54,7 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
     padding-top: 20px;
     padding-bottom: 240px;
     background: url(../assets/img/header-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    @include bg-position;
     height: 100vh;
 
     &__header {
@@ -236,9 +240,7 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
     padding-top: 80px;
     padding-bottom: 128px;
     background: url(../assets/img/review-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    @include bg-position;
 
     &__img {
         position: relative;
@@ -287,6 +289,93 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
 //=== / reviews ===
 
 //=== menu ===
+.section-menu {
+    padding-top: 98px;
+
+    &-inner__title {
+        margin-bottom: 29px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: $color-title;
+    }
+    &-inner__img {
+        position: relative;
+        bottom: 37px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.out-menu__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    
+    &-item {
+        width: 20%;
+        text-decoration: none;
+
+        &__subtitle {
+            @include font-secondary;
+
+            margin-bottom: 3px;
+            padding-top: 73px;
+            font-size: 15.37px;
+            letter-spacing: 1px;
+            text-align: center;
+            font-style: italic;
+            color: $color-white;
+            opacity: 0.9;
+        }
+        &__title {
+            padding-bottom: 90px;
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 1.4px;
+            text-align: center;
+            color: $color-white;
+        }
+    }
+    .italian-menu-bg {
+        background: url(../assets/img/menu-italian.jpg);
+        @include bg-position;
+    }
+    .indian-menu-bg {
+        background: url(../assets/img/menu-indian.jpg);
+        @include bg-position;
+    }
+    .french-menu-bg {
+        background: url(../assets/img/menu-french.jpg);
+        @include bg-position;
+    }
+    .steakhouse-menu-bg {
+        background: url(../assets/img/menu-steakhouse.jpg);
+        @include bg-position;
+    }
+    .seafood-menu-bg {
+        background: url(../assets/img/menu-seafood.jpg);
+        @include bg-position;
+    }
+    .sushi-menu-bg {
+        background: url(../assets/img/menu-sushi.jpg);
+        @include bg-position;
+    }
+    .mexican-menu-bg {
+        background: url(../assets/img/menu-mexican.jpg);
+        @include bg-position;
+    }
+    .chinese-menu-bg {
+        background: url(../assets/img/menu-chinese.jpg);
+        @include bg-position;
+    }
+    .pizza-menu-bg {
+        background: url(../assets/img/menu-pizza.jpg);
+        @include bg-position;
+    }
+    .american-menu-bg {
+        background: url(../assets/img/menu-american.jpg);
+        @include bg-position;
+    }
+}
 //=== / menu ===
 
 //=== stats ===
