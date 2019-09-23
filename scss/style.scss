@@ -177,6 +177,58 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
 //=== / about ===
 
 //=== app ===
+.section-app {
+    padding-top: 103px;
+    background-color: #f7f7f7;
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        &__img {
+            position: relative;
+            left: -25px;
+            margin-right: 90px;
+        }
+        &__inner {
+            &-title {
+                position: relative;
+                margin-bottom: 20px;
+                padding-top: 77px;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: $color-title;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    background: url(../assets/img/underline.png);
+                    left: 0;
+                    bottom: -7px;
+                    width: 88px;
+                    height: 1px;
+                }
+            }
+            &-text {
+                margin-bottom: 29px;
+                font-size: 16px;
+                line-height: 25px;
+                font-weight: 300;
+                letter-spacing: 0.7px;
+            }
+            &-footer {
+                a {
+                    margin-right: 7px;
+                    text-decoration: none;
+                    img {
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
 //=== / app ===
 
 //=== reviews ===
