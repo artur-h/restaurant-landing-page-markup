@@ -1,0 +1,61 @@
+//=== Mixin ===
+@mixin font-main {
+    font-family: 'Lato', sans-serif;
+}
+//=== / Mixin ===
+
+//=== Variables ===
+$font-title: #000000;
+$font-text: #818181;
+$font-white: #ffffff;
+//=== / Variables ===
+
+//=== Common ===
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    @include font-main;
+
+    color: $color-main;
+}
+
+ul, li, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+.section-outer {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.section-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+//=== / Common ===
+
+//=== header ===
+//=== / header ===
+
+//=== about ===
+//=== / about ===
+
+//=== app ===
+//=== / app ===
+
+//=== reviews ===
+//=== / reviews ===
+
+//=== menu ===
+//=== / menu ===
+
+//=== stats ===
+//=== / stats ===
+
+//=== footer ===
+//=== / footer ===
