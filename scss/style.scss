@@ -2,6 +2,10 @@
 @mixin font-main {
     font-family: 'Lato', sans-serif;
 }
+
+@mixin font-secondary {
+    font-family: "Times New Roman", Times, serif;
+}
 //=== / Mixin ===
 
 //=== Variables ===
@@ -78,8 +82,9 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
         align-items: center;
 
         &-subtitle {
+            @include font-secondary;
+
             font-size: 32px;
-            font-family: "Times New Roman", Times, serif;
             font-weight: 700;
             letter-spacing: 0.2px;
             font-style: italic;
@@ -119,6 +124,56 @@ ul, li, h1, h2, h3, h4, h5, h6, p {
 //=== / header ===
 
 //=== about ===
+.section-about {
+    padding-top: 102px;
+    padding-bottom: 93px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__wrapper {
+                position: relative;
+                display: inline-block;
+                margin-bottom: 16px;
+                border: 2px solid #000000;
+                border-radius: 50%;
+                width: 107px;
+                height: 107px;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            &__title {
+                margin-bottom: 7px;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: $color-title;
+            }
+            .underline {
+                margin-bottom: 12px;
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 1.65em;
+                font-weight: 400;
+                letter-spacing: 0.6px;
+                text-align: center;
+            }
+        }
+    }
+}
 //=== / about ===
 
 //=== app ===
